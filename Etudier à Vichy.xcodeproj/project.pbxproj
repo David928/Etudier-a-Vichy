@@ -56,15 +56,39 @@
 		2B07AE55213075410059FAC1 /* Etudier à Vichy */ = {
 			isa = PBXGroup;
 			children = (
+				2B07AE6A213078FD0059FAC1 /* Modele */,
+				2B07AE6B213079190059FAC1 /* Vue */,
+				2B07AE6C2130792E0059FAC1 /* Controller */,
 				2B07AE56213075410059FAC1 /* AppDelegate.swift */,
-				2B07AE58213075410059FAC1 /* FirstViewController.swift */,
-				2B07AE5A213075410059FAC1 /* SecondViewController.swift */,
 				2B07AE5C213075410059FAC1 /* Main.storyboard */,
 				2B07AE5F213075430059FAC1 /* Assets.xcassets */,
 				2B07AE61213075430059FAC1 /* LaunchScreen.storyboard */,
 				2B07AE64213075430059FAC1 /* Info.plist */,
 			);
 			path = "Etudier à Vichy";
+			sourceTree = "<group>";
+		};
+		2B07AE6A213078FD0059FAC1 /* Modele */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modele;
+			sourceTree = "<group>";
+		};
+		2B07AE6B213079190059FAC1 /* Vue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vue;
+			sourceTree = "<group>";
+		};
+		2B07AE6C2130792E0059FAC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B07AE58213075410059FAC1 /* FirstViewController.swift */,
+				2B07AE5A213075410059FAC1 /* SecondViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
