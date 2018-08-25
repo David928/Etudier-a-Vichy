@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -144,22 +145,22 @@
                     <navigationItem key="navigationItem" id="300-vs-zDh"/>
                     <connections>
                         <outlet property="tableView" destination="i8e-vG-Ixk" id="2Bv-73-7n6"/>
-                        <segue destination="Z14-9s-h3i" kind="show" identifier="Detail" id="FFu-4w-cqQ"/>
+                        <segue destination="Z14-9s-h3i" kind="show" identifier="Detail2" id="FFu-4w-cqQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1688.8" y="-681.40929535232385"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Restaurant Controller-->
         <scene sceneID="6Sh-of-d36">
             <objects>
-                <viewController id="Z14-9s-h3i" sceneMemberID="viewController">
+                <viewController id="Z14-9s-h3i" customClass="DetailRestaurantController" customModule="Etudier_a__Vichy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JFm-AO-mgq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ga-R2-VO1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ga-R2-VO1" customClass="ImageRonde" customModule="Etudier_a__Vichy" customModuleProvider="target">
                                 <rect key="frame" x="87.666666666666686" y="98" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="AIP-O7-bt0"/>
@@ -185,6 +186,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Ca-EI-FvH"/>
                     </view>
+                    <connections>
+                        <outlet property="nomEtDesc" destination="O8d-EV-AwM" id="ZVJ-1p-lR0"/>
+                        <outlet property="restaurantIV" destination="4ga-R2-VO1" id="TGp-bw-j3b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4f3-bm-59l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -280,7 +285,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ds9-gP-HmL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ds9-gP-HmL" customClass="ImageRonde" customModule="Etudier_a__Vichy" customModuleProvider="target">
                                 <rect key="frame" x="87.666666666666686" y="98" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="2wv-eJ-dgt"/>
@@ -306,6 +311,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ITK-Iy-g7K"/>
                     </view>
+                    <connections>
+                        <outlet property="loisirIV" destination="Ds9-gP-HmL" id="8Sl-b8-obG"/>
+                        <outlet property="nomEtDesc" destination="cty-bn-tHw" id="u6W-5u-rkL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1V-jk-Cpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,8 +18,8 @@ class TableViewIntegreeController: UITableViewController {
         loisirs = LoisirCollection().all()
         tableView.backgroundColor = UIColor.clear
         let bg = UIImageView(frame: view.bounds)
-        bg.image = loisirs[0].image
-        bg.contentMode = .scaleAspectFit
+        bg.image = UIImage(named: "fond_vichy")
+        bg.contentMode = .scaleAspectFill
         tableView.backgroundView = bg
         title = "Loisirs à Vichy"
     }

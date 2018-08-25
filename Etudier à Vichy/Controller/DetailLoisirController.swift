@@ -9,9 +9,27 @@
 import UIKit
 
 class DetailLoisirController: UIViewController {
-
+    
+    @IBOutlet weak var loisirIV: ImageRonde!
+    @IBOutlet weak var nomEtDesc: UITextView!
+    
+    var loisirRecu: Loisir?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let loisir = loisirRecu else { return }
+        loisirIV.image = loisir.image
+        
+        let mutable = NSMutableAttributedString(string: loisir.nom + "\n", attributes: [
+            .foregroundColor: UIColor.red,
+            .font: UIFont.boldSystemFont(ofSize: 20)])
+        mutable.append(NSAttributedString(
+            string: loisir.desc,
+            attributes: [
+                .font: UIFont.systemFont(ofSize: 17),
+                .foregroundColor: UIColor.darkGray
+            ]))
+        nomEtDesc.attributedText = mutable
 
         // Do any additional setup after loading the view.
     }
