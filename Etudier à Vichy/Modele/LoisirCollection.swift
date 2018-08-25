@@ -23,7 +23,7 @@ class LoisirCollection {
         loisirs.append(Loisir(
             nom: "SpaceBowl",
             desc: "La calanque est étroite et termine le vallon de la Mounine, entre la calanque de Callelongue et la calanque de Marseilleveyre. Elle est située derrière le col du Sémaphore.",
-            image: UIImage(named: "SpaceBowl.jpg"),
+            image: UIImage(named: "Spacebowl.jpg"),
             latitude: 43.210749,
             longitude: 5.362573)
         )
