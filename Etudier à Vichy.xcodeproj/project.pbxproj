@@ -18,6 +18,7 @@
 		2BA3590D21308B6700362141 /* TableViewIntegreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3590C21308B6700362141 /* TableViewIntegreeController.swift */; };
 		2BA3590F213159C000362141 /* LoisirCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3590E213159C000362141 /* LoisirCell.swift */; };
 		2BA359112131601200362141 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA359102131601200362141 /* ImageRonde.swift */; };
+		2BA35913213171F700362141 /* LoisirCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA35912213171F700362141 /* LoisirCellAlternative.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2BA3590C21308B6700362141 /* TableViewIntegreeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIntegreeController.swift; sourceTree = "<group>"; };
 		2BA3590E213159C000362141 /* LoisirCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoisirCell.swift; sourceTree = "<group>"; };
 		2BA359102131601200362141 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
+		2BA35912213171F700362141 /* LoisirCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoisirCellAlternative.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				2BA3590E213159C000362141 /* LoisirCell.swift */,
 				2BA359102131601200362141 /* ImageRonde.swift */,
+				2BA35912213171F700362141 /* LoisirCellAlternative.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				2BA3590B21308B2500362141 /* ControllerAvecCarte.swift in Sources */,
 				2BA3590921308AFC00362141 /* ControllerAvecTableView.swift in Sources */,
 				2BA3590F213159C000362141 /* LoisirCell.swift in Sources */,
+				2BA35913213171F700362141 /* LoisirCellAlternative.swift in Sources */,
 				2BA359112131601200362141 /* ImageRonde.swift in Sources */,
 				2B07AE57213075410059FAC1 /* AppDelegate.swift in Sources */,
 			);

@@ -16,14 +16,139 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fond_vichy" translatesAutoresizingMaskIntoConstraints="NO" id="OjK-81-jtV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUS-rB-tqi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="phw-JS-GMk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ol-Q4-zyW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="XU7-tS-aI7">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Les loisirs à Vichy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Po-dY-BgP">
+                                <rect key="frame" x="10" y="30" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6MT-9c-CXM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i8e-vG-Ixk">
+                                <rect key="frame" x="10" y="68" width="355" height="540"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Alternative" rowHeight="200" id="tke-Iv-SZh" customClass="LoisirCellAlternative" customModule="Etudier_a__Vichy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="355" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tke-Iv-SZh" id="j5i-s9-epC">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cinéma étoile palace" translatesAutoresizingMaskIntoConstraints="NO" id="N9s-Jb-HwD">
+                                                    <rect key="frame" x="0.0" y="2" width="355" height="195"/>
+                                                </imageView>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRc-tk-FCq">
+                                                    <rect key="frame" x="0.0" y="137" width="355" height="60"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TiJ-iJ-JWq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYI-UZ-TYZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="y2W-97-QMu">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                </view>
+                                                                <vibrancyEffect>
+                                                                    <blurEffect style="light"/>
+                                                                </vibrancyEffect>
+                                                            </visualEffectView>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="1Ty-Vh-0wb"/>
+                                                    </constraints>
+                                                    <blurEffect style="light"/>
+                                                </visualEffectView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="B8O-sc-IMI">
+                                                    <rect key="frame" x="0.0" y="137" width="355" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="7dW-mZ-Ss8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ZRc-tk-FCq" secondAttribute="bottom" constant="3" id="8aI-U3-jPB"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZRc-tk-FCq" secondAttribute="trailing" id="AEI-hX-o3f"/>
+                                                <constraint firstItem="B8O-sc-IMI" firstAttribute="leading" secondItem="j5i-s9-epC" secondAttribute="leading" id="Ruf-ZT-ONe"/>
+                                                <constraint firstItem="N9s-Jb-HwD" firstAttribute="leading" secondItem="j5i-s9-epC" secondAttribute="leading" id="Vhd-bC-kti"/>
+                                                <constraint firstAttribute="bottom" secondItem="B8O-sc-IMI" secondAttribute="bottom" constant="3" id="bXo-YQ-blu"/>
+                                                <constraint firstAttribute="bottom" secondItem="N9s-Jb-HwD" secondAttribute="bottom" constant="3" id="oRC-0W-dc2"/>
+                                                <constraint firstItem="N9s-Jb-HwD" firstAttribute="top" secondItem="j5i-s9-epC" secondAttribute="top" constant="2" id="rok-gT-MiK"/>
+                                                <constraint firstAttribute="trailing" secondItem="N9s-Jb-HwD" secondAttribute="trailing" id="wmh-kH-5h6"/>
+                                                <constraint firstItem="ZRc-tk-FCq" firstAttribute="leading" secondItem="j5i-s9-epC" secondAttribute="leading" id="xBC-fv-otY"/>
+                                                <constraint firstAttribute="trailing" secondItem="B8O-sc-IMI" secondAttribute="trailing" id="xZC-y6-PJe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="loisirIV" destination="N9s-Jb-HwD" id="0VV-2a-3pg"/>
+                                            <outlet property="nomLabel" destination="B8O-sc-IMI" id="jUf-8P-Gaq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i8e-vG-Ixk" firstAttribute="top" secondItem="5Po-dY-BgP" secondAttribute="bottom" constant="8" id="6wz-eR-3oU"/>
+                            <constraint firstItem="OjK-81-jtV" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="85M-g2-RPq"/>
+                            <constraint firstItem="oUS-rB-tqi" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="FIs-lm-rzY"/>
+                            <constraint firstItem="oUS-rB-tqi" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="SsQ-ld-AiQ"/>
+                            <constraint firstItem="5Po-dY-BgP" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="10" id="YWb-oC-0Q0"/>
+                            <constraint firstItem="i8e-vG-Ixk" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="aZd-MF-6on"/>
+                            <constraint firstItem="5Po-dY-BgP" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="cJ0-Iu-kvA"/>
+                            <constraint firstItem="OjK-81-jtV" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="dlO-RT-cH7"/>
+                            <constraint firstAttribute="bottom" secondItem="OjK-81-jtV" secondAttribute="bottom" id="iXx-TM-U4q"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="i8e-vG-Ixk" secondAttribute="bottom" constant="10" id="k9n-Wa-Bec"/>
+                            <constraint firstItem="oUS-rB-tqi" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="n6H-Iu-yxJ"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="i8e-vG-Ixk" secondAttribute="trailing" constant="10" id="sy2-Rk-XUD"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="5Po-dY-BgP" secondAttribute="trailing" constant="10" id="tGp-J6-Zew"/>
+                            <constraint firstAttribute="bottom" secondItem="oUS-rB-tqi" secondAttribute="bottom" id="w9X-7i-Ykz"/>
+                            <constraint firstItem="OjK-81-jtV" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="xCJ-Wi-9YW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Table View 1" image="first" selectedImage="list" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tableView" destination="i8e-vG-Ixk" id="2Bv-73-7n6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-681"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-681.40929535232385"/>
         </scene>
         <!--Table View 2-->
         <scene sceneID="T10-Ly-XUm">
@@ -141,8 +266,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Cinéma étoile palace" width="1919" height="1271"/>
         <image name="earth" width="25.600000381469727" height="25.600000381469727"/>
         <image name="first" width="30" height="30"/>
+        <image name="fond_vichy" width="780" height="820"/>
         <image name="list" width="25.600000381469727" height="25.600000381469727"/>
     </resources>
 </document>
