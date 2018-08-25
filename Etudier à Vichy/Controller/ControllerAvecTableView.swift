@@ -14,6 +14,7 @@ class ControllerAvecTableView: UIViewController, UITableViewDelegate, UITableVie
     
     var restaurants: [Restaurant] = []
     var cellID = "Restaurant"
+    var segueID = "Detail"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +42,19 @@ class ControllerAvecTableView: UIViewController, UITableViewDelegate, UITableVie
         return 200
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: segueID, sender: restaurants[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueID, let vc = segue.destination as? DetailRestaurantController {
+            vc.restaurantRecu = sender as? Restaurant
+            
+        }
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

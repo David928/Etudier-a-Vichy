@@ -20,7 +20,7 @@ class DetailRestaurantController: UIViewController {
         guard let restaurant = restaurantRecu else { return }
         restaurantIV.image = restaurant.image
         
-        let mutable = NSMutableAttributedString(string: restaurant.nom + "\n", attributes: [
+        let mutable = NSMutableAttributedString(string: restaurant.nom + "\n\n", attributes: [
             .foregroundColor: UIColor.red,
             .font: UIFont.boldSystemFont(ofSize: 20)])
         mutable.append(NSAttributedString(
@@ -30,6 +30,7 @@ class DetailRestaurantController: UIViewController {
                 .foregroundColor: UIColor.darkGray
             ]))
         nomEtDesc.attributedText = mutable
+        nomEtDesc.textAlignment = .center
 
         // Do any additional setup after loading the view.
     }

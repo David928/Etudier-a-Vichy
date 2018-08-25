@@ -8,10 +8,14 @@
 
 import UIKit
 
+
+
+
 class TableViewIntegreeController: UITableViewController {
     
     var loisirs: [Loisir] = []
     var cellID = "LoisirCell"
+    let segueID = "Detail"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +53,18 @@ class TableViewIntegreeController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
-        
+        }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: segueID, sender: loisirs[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueID {
+            if let vc = segue.destination as? DetailLoisirController {
+                vc.loisirRecu = sender as? Loisir
+            }
+        }
     }
     
     

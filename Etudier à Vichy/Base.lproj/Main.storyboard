@@ -145,7 +145,7 @@
                     <navigationItem key="navigationItem" id="300-vs-zDh"/>
                     <connections>
                         <outlet property="tableView" destination="i8e-vG-Ixk" id="2Bv-73-7n6"/>
-                        <segue destination="Z14-9s-h3i" kind="show" identifier="Detail2" id="FFu-4w-cqQ"/>
+                        <segue destination="Z14-9s-h3i" kind="show" identifier="Detail" id="FFu-4w-cqQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

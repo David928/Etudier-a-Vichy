@@ -20,7 +20,7 @@ class DetailLoisirController: UIViewController {
         guard let loisir = loisirRecu else { return }
         loisirIV.image = loisir.image
         
-        let mutable = NSMutableAttributedString(string: loisir.nom + "\n", attributes: [
+        let mutable = NSMutableAttributedString(string: loisir.nom + "\n\n", attributes: [
             .foregroundColor: UIColor.red,
             .font: UIFont.boldSystemFont(ofSize: 20)])
         mutable.append(NSAttributedString(
@@ -30,6 +30,7 @@ class DetailLoisirController: UIViewController {
                 .foregroundColor: UIColor.darkGray
             ]))
         nomEtDesc.attributedText = mutable
+        nomEtDesc.textAlignment = .center
 
         // Do any additional setup after loading the view.
     }
