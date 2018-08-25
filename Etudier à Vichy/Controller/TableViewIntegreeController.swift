@@ -11,12 +11,16 @@ import UIKit
 class TableViewIntegreeController: UITableViewController {
     
     var loisirs: [Loisir] = []
-    
+    var cellID = "LoisirCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         loisirs = LoisirCollection().all()
-
+        tableView.backgroundColor = UIColor.clear
+        let bg = UIImageView(frame: view.bounds)
+        bg.image = loisirs[0].image
+        bg.contentMode = .scaleAspectFit
+        tableView.backgroundView = bg
     }
 
     // MARK: - Table view data source
@@ -30,11 +34,16 @@ class TableViewIntegreeController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        let loisir = loisirs[indexPath.row]
-        cell.textLabel?.text = loisir.nom
-        cell.imageView?.image = loisir.image
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as? LoisirCell {
+            cell.setupCell(loisirs[indexPath.row])
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+            let loisir = loisirs[indexPath.row]
+            cell.textLabel?.text = loisir.nom
+            cell.imageView?.image = loisir.image
+            return cell
+        }
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

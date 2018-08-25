@@ -42,6 +42,56 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoisirCell" rowHeight="168" id="rcE-Q9-EGx" customClass="LoisirCell" customModule="Etudier_a__Vichy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="168"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rcE-Q9-EGx" id="pig-VY-0vm">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="167.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOh-Sf-VY8">
+                                            <rect key="frame" x="0.0" y="67.5" width="375" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gRM-m5-UuF">
+                                                    <rect key="frame" x="150" y="8" width="217" height="84"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="gRM-m5-UuF" firstAttribute="top" secondItem="ZOh-Sf-VY8" secondAttribute="top" constant="8" id="8fs-XQ-VPc"/>
+                                                <constraint firstItem="gRM-m5-UuF" firstAttribute="leading" secondItem="ZOh-Sf-VY8" secondAttribute="leading" constant="150" id="8mu-ku-5eS"/>
+                                                <constraint firstAttribute="height" constant="100" id="Otc-DQ-b0Z"/>
+                                                <constraint firstAttribute="bottom" secondItem="gRM-m5-UuF" secondAttribute="bottom" constant="8" id="mU3-As-dO1"/>
+                                                <constraint firstAttribute="trailing" secondItem="gRM-m5-UuF" secondAttribute="trailing" constant="8" id="ps6-Bp-pJa"/>
+                                            </constraints>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gwy-9w-h5b" customClass="ImageRonde" customModule="Etudier_a__Vichy" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="21.5" width="125" height="125"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="125" id="Acl-Wn-1vv"/>
+                                                <constraint firstAttribute="width" constant="125" id="YR2-oj-x5K"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="ZOh-Sf-VY8" secondAttribute="bottom" id="HKK-5T-1fm"/>
+                                        <constraint firstItem="gwy-9w-h5b" firstAttribute="centerY" secondItem="pig-VY-0vm" secondAttribute="centerY" id="Qn3-0J-8FX"/>
+                                        <constraint firstItem="ZOh-Sf-VY8" firstAttribute="leading" secondItem="pig-VY-0vm" secondAttribute="leading" id="fhB-dm-oc4"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZOh-Sf-VY8" secondAttribute="trailing" id="fy0-25-4nR"/>
+                                        <constraint firstItem="gwy-9w-h5b" firstAttribute="leading" secondItem="pig-VY-0vm" secondAttribute="leading" constant="8" id="zaO-0B-OGm"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="containerView" destination="ZOh-Sf-VY8" id="x67-ud-b7M"/>
+                                    <outlet property="loisirIV" destination="gwy-9w-h5b" id="CnK-sc-XBP"/>
+                                    <outlet property="nomLabel" destination="gRM-m5-UuF" id="dWl-0S-YXJ"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="h8j-5e-Dkh" id="kib-QN-Yfd"/>
@@ -52,7 +102,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mw5-Dt-pzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="0.0"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-0.44977511244377816"/>
         </scene>
         <!--Carte-->
         <scene sceneID="wg7-f3-ORb">
