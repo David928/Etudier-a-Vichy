@@ -12,25 +12,26 @@ class ControllerAvecTableView: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
-    var loisirs: [Loisir] = []
-    var cellID = "Alternative"
+    var restaurants: [Restaurant] = []
+    var cellID = "Restaurant"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        loisirs = LoisirCollection().all()
+        restaurants = RestaurantCollection().all()
+        title = "Manger à Vichy"
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return loisirs.count
+        return restaurants.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let loisir = loisirs[indexPath.row]
-        if let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as? LoisirCellAlternative {
-            cell.loisir = loisir
+        let restaurant = restaurants[indexPath.row]
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as? RestaurantCell {
+            cell.restaurant = restaurant
             return cell
         }
         return UITableViewCell()

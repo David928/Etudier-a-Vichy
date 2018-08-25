@@ -21,6 +21,7 @@ class TableViewIntegreeController: UITableViewController {
         bg.image = loisirs[0].image
         bg.contentMode = .scaleAspectFit
         tableView.backgroundView = bg
+        title = "Loisirs à Vichy"
     }
 
     // MARK: - Table view data source

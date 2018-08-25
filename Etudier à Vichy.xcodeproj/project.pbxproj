@@ -18,7 +18,11 @@
 		2BA3590D21308B6700362141 /* TableViewIntegreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3590C21308B6700362141 /* TableViewIntegreeController.swift */; };
 		2BA3590F213159C000362141 /* LoisirCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3590E213159C000362141 /* LoisirCell.swift */; };
 		2BA359112131601200362141 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA359102131601200362141 /* ImageRonde.swift */; };
-		2BA35913213171F700362141 /* LoisirCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA35912213171F700362141 /* LoisirCellAlternative.swift */; };
+		2BA3591521318E9F00362141 /* DetailLoisirController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3591421318E9F00362141 /* DetailLoisirController.swift */; };
+		2BA3591721318EFF00362141 /* DetailRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3591621318EFF00362141 /* DetailRestaurantController.swift */; };
+		2BA3591921318F5E00362141 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3591821318F5E00362141 /* Restaurants.swift */; };
+		2BA3591B21318FB800362141 /* RestaurantCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3591A21318FB800362141 /* RestaurantCollection.swift */; };
+		2BA3591D213197BE00362141 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3591C213197BE00362141 /* RestaurantCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +39,11 @@
 		2BA3590C21308B6700362141 /* TableViewIntegreeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIntegreeController.swift; sourceTree = "<group>"; };
 		2BA3590E213159C000362141 /* LoisirCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoisirCell.swift; sourceTree = "<group>"; };
 		2BA359102131601200362141 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
-		2BA35912213171F700362141 /* LoisirCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoisirCellAlternative.swift; sourceTree = "<group>"; };
+		2BA3591421318E9F00362141 /* DetailLoisirController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLoisirController.swift; sourceTree = "<group>"; };
+		2BA3591621318EFF00362141 /* DetailRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRestaurantController.swift; sourceTree = "<group>"; };
+		2BA3591821318F5E00362141 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
+		2BA3591A21318FB800362141 /* RestaurantCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollection.swift; sourceTree = "<group>"; };
+		2BA3591C213197BE00362141 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,8 @@
 			children = (
 				2B07AE6D21307A280059FAC1 /* Loisirs.swift */,
 				2B07AE6F21307CFD0059FAC1 /* LoisirCollection.swift */,
+				2BA3591821318F5E00362141 /* Restaurants.swift */,
+				2BA3591A21318FB800362141 /* RestaurantCollection.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -94,7 +104,7 @@
 			children = (
 				2BA3590E213159C000362141 /* LoisirCell.swift */,
 				2BA359102131601200362141 /* ImageRonde.swift */,
-				2BA35912213171F700362141 /* LoisirCellAlternative.swift */,
+				2BA3591C213197BE00362141 /* RestaurantCell.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -105,6 +115,8 @@
 				2BA3590821308AFC00362141 /* ControllerAvecTableView.swift */,
 				2BA3590A21308B2500362141 /* ControllerAvecCarte.swift */,
 				2BA3590C21308B6700362141 /* TableViewIntegreeController.swift */,
+				2BA3591421318E9F00362141 /* DetailLoisirController.swift */,
+				2BA3591621318EFF00362141 /* DetailRestaurantController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,14 +192,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA3591721318EFF00362141 /* DetailRestaurantController.swift in Sources */,
 				2BA3590D21308B6700362141 /* TableViewIntegreeController.swift in Sources */,
 				2B07AE6E21307A280059FAC1 /* Loisirs.swift in Sources */,
 				2B07AE7021307CFD0059FAC1 /* LoisirCollection.swift in Sources */,
+				2BA3591921318F5E00362141 /* Restaurants.swift in Sources */,
+				2BA3591B21318FB800362141 /* RestaurantCollection.swift in Sources */,
+				2BA3591D213197BE00362141 /* RestaurantCell.swift in Sources */,
 				2BA3590B21308B2500362141 /* ControllerAvecCarte.swift in Sources */,
 				2BA3590921308AFC00362141 /* ControllerAvecTableView.swift in Sources */,
 				2BA3590F213159C000362141 /* LoisirCell.swift in Sources */,
-				2BA35913213171F700362141 /* LoisirCellAlternative.swift in Sources */,
 				2BA359112131601200362141 /* ImageRonde.swift in Sources */,
+				2BA3591521318E9F00362141 /* DetailLoisirController.swift in Sources */,
 				2B07AE57213075410059FAC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
