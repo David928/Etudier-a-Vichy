@@ -23,6 +23,7 @@
 		2BA3591921318F5E00362141 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3591821318F5E00362141 /* Restaurants.swift */; };
 		2BA3591B21318FB800362141 /* RestaurantCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3591A21318FB800362141 /* RestaurantCollection.swift */; };
 		2BA3591D213197BE00362141 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3591C213197BE00362141 /* RestaurantCell.swift */; };
+		2BA3591F2131F49200362141 /* Bouton Arrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3591E2131F49200362141 /* Bouton Arrondi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		2BA3591821318F5E00362141 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
 		2BA3591A21318FB800362141 /* RestaurantCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollection.swift; sourceTree = "<group>"; };
 		2BA3591C213197BE00362141 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		2BA3591E2131F49200362141 /* Bouton Arrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bouton Arrondi.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				2BA3590E213159C000362141 /* LoisirCell.swift */,
 				2BA359102131601200362141 /* ImageRonde.swift */,
 				2BA3591C213197BE00362141 /* RestaurantCell.swift */,
+				2BA3591E2131F49200362141 /* Bouton Arrondi.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				2B07AE6E21307A280059FAC1 /* Loisirs.swift in Sources */,
 				2B07AE7021307CFD0059FAC1 /* LoisirCollection.swift in Sources */,
 				2BA3591921318F5E00362141 /* Restaurants.swift in Sources */,
+				2BA3591F2131F49200362141 /* Bouton Arrondi.swift in Sources */,
 				2BA3591B21318FB800362141 /* RestaurantCollection.swift in Sources */,
 				2BA3591D213197BE00362141 /* RestaurantCell.swift in Sources */,
 				2BA3590B21308B2500362141 /* ControllerAvecCarte.swift in Sources */,

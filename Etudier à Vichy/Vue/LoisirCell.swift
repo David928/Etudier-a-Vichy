@@ -31,5 +31,4 @@ class LoisirCell: UITableViewCell {
         nomLabel.text = self.loisir.nom
         loisirIV.image = self.loisir.image
     }
-
 }

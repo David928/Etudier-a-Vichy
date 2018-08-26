@@ -13,11 +13,11 @@ class DetailLoisirController: UIViewController {
     @IBOutlet weak var loisirIV: ImageRonde!
     @IBOutlet weak var nomEtDesc: UITextView!
     
-    var loisirRecu: Loisir?
+    var loisirRecue: Loisir?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let loisir = loisirRecu else { return }
+        guard let loisir = loisirRecue else { return }
         loisirIV.image = loisir.image
         
         let mutable = NSMutableAttributedString(string: loisir.nom + "\n\n", attributes: [
@@ -31,19 +31,5 @@ class DetailLoisirController: UIViewController {
             ]))
         nomEtDesc.attributedText = mutable
         nomEtDesc.textAlignment = .center
-
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

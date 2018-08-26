@@ -100,6 +100,4 @@ class RestaurantCollection {
         
         return restaurant
     }
-    
-    
 }

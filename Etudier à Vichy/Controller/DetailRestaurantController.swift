@@ -13,11 +13,11 @@ class DetailRestaurantController: UIViewController {
     @IBOutlet weak var restaurantIV: ImageRonde!
     @IBOutlet weak var nomEtDesc: UITextView!
     
-    var restaurantRecu: Restaurant?
+    var restaurantRecue: Restaurant?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let restaurant = restaurantRecu else { return }
+        guard let restaurant = restaurantRecue else { return }
         restaurantIV.image = restaurant.image
         
         let mutable = NSMutableAttributedString(string: restaurant.nom + "\n\n", attributes: [
@@ -31,19 +31,5 @@ class DetailRestaurantController: UIViewController {
             ]))
         nomEtDesc.attributedText = mutable
         nomEtDesc.textAlignment = .center
-
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
