@@ -31,5 +31,7 @@ class DetailLoisirController: UIViewController {
             ]))
         nomEtDesc.attributedText = mutable
         nomEtDesc.textAlignment = .center
+        nomEtDesc.textColor = .black
+
     }
 }
