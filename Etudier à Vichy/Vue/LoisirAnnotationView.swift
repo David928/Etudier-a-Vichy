@@ -1,15 +1,15 @@
 //
-//  MonAnnotationView.swift
+//  LoisirAnnotationView.swift
 //  Etudier à Vichy
 //
-//  Created by GONZALES David on 26/08/2018.
+//  Created by GONZALES David on 27/08/2018.
 //  Copyright © 2018 GONZALES David. All rights reserved.
 //
 
 import UIKit
 import MapKit
 
-class MonAnnotationView: MKAnnotationView {
+class LoisirAnnotationView: MKAnnotationView {
     
     var controller: ControllerAvecCarte?
     
@@ -53,14 +53,14 @@ class MonAnnotationView: MKAnnotationView {
     }
     
     func setupCenter() -> UIView? {
-        guard let anno = annotation as? MonAnnotation else { return nil}
+        guard let anno = annotation as? LoisirAnnotation else { return nil}
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 125, height: 125))
         view.translatesAutoresizingMaskIntoConstraints = false
         view.widthAnchor.constraint(equalToConstant: 125).isActive = true
         view.heightAnchor.constraint(equalToConstant: 125).isActive = true
         
         let imageView = UIImageView(frame: view.bounds)
-        imageView.image = anno.restaurant.image
+        imageView.image = anno.loisir.image
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
         view.addSubview(imageView)
@@ -69,15 +69,15 @@ class MonAnnotationView: MKAnnotationView {
     }
     
     @objc func detail() {
-        guard let anno = annotation as? MonAnnotation else { return }
+        guard let anno = annotation as? LoisirAnnotation else { return }
         
-        //controller?.toDetail(calanque: anno.calanque)
+        //controller?.toDetail(loisir: anno.loisir)
         
-        NotificationCenter.default.post(name: Notification.Name("detail"), object: anno.restaurant)
+        NotificationCenter.default.post(name: Notification.Name("detail"), object: anno.loisir)
     }
     
     @objc func gps() {
-        guard let anno = annotation as? MonAnnotation else { return }
+        guard let anno = annotation as? LoisirAnnotation else { return }
         let placemark = MKPlacemark(coordinate: anno.coordinate)
         let options = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
         let map = MKMapItem(placemark: placemark)

@@ -79,7 +79,7 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate, CLLocationManage
             
             //Anotation Custom
             
-            let annotation = MonAnnotation(restaurant)
+            let annotation = RestaurantAnnotation(restaurant)
             mapView.addAnnotation(annotation)
         }
     }
@@ -92,14 +92,14 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate, CLLocationManage
             return nil
         }
         
-        if let anno = annotation as? MonAnnotation {
+        if let anno = annotation as? RestaurantAnnotation {
             var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
             if annotationView == nil {
                 
                 //Override
                 //annotationView = MonAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
                 
-                annotationView = MonAnnotationView(controller: self, annotation: anno, reuseIdentifier: reuseIdentifier)
+                annotationView = RestaurantAnnonationView(controller: self, annotation: anno, reuseIdentifier: reuseIdentifier)
                 
                 //annotationView = MKAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
                 //annotationView?.image = UIImage(named: "placeholder")
@@ -111,9 +111,6 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate, CLLocationManage
         }
         return nil
     }
-    
-    
-    
     @IBAction func getPosition(_ sender: Any) {
         if userPosition != nil {
             setupMap(coordonnees: userPosition!.coordinate)

@@ -277,7 +277,7 @@
                     <navigationItem key="navigationItem" id="qdz-NW-43N">
                         <barButtonItem key="rightBarButtonItem" title="Carte loisir" image="earth" id="yJr-NZ-By9">
                             <connections>
-                                <segue destination="5Mm-Uq-xyq" kind="show" identifier="Carte" id="wso-0m-qHe"/>
+                                <segue destination="5Mm-Uq-xyq" kind="show" id="ibX-6R-I01"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -300,40 +300,44 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Sft-aL-4Zl">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ROE-tr-U6L">
-                                <rect key="frame" x="20" y="98" width="335" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="nUS-ce-NyX"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Standrad"/>
-                                    <segment title="Satellite"/>
-                                    <segment title="Hybride"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentedChanged:" destination="5Mm-Uq-xyq" eventType="valueChanged" id="CJu-fy-QaU"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Sft-aL-4Zl" firstAttribute="top" secondItem="GNN-gI-UwI" secondAttribute="top" id="LyI-Pg-JtC"/>
-                            <constraint firstItem="ROE-tr-U6L" firstAttribute="leading" secondItem="GNN-gI-UwI" secondAttribute="leading" constant="20" id="aGc-Ic-Vco"/>
-                            <constraint firstItem="ROE-tr-U6L" firstAttribute="top" secondItem="GNN-gI-UwI" secondAttribute="top" constant="10" id="c39-tw-Kby"/>
                             <constraint firstItem="Sft-aL-4Zl" firstAttribute="leading" secondItem="GNN-gI-UwI" secondAttribute="leading" id="fBi-MO-s4P"/>
                             <constraint firstItem="Sft-aL-4Zl" firstAttribute="trailing" secondItem="GNN-gI-UwI" secondAttribute="trailing" id="gO1-TD-MXj"/>
                             <constraint firstItem="Sft-aL-4Zl" firstAttribute="bottom" secondItem="GNN-gI-UwI" secondAttribute="bottom" id="vXS-Wr-Qvn"/>
-                            <constraint firstItem="GNN-gI-UwI" firstAttribute="trailing" secondItem="ROE-tr-U6L" secondAttribute="trailing" constant="20" id="zKV-Tv-SIB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GNN-gI-UwI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Vcu-aI-AcR">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="ROE-tr-U6L">
+                            <rect key="frame" x="81.666666666666686" y="7.6666666666666679" width="212" height="29.000000000000004"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Standrad"/>
+                                <segment title="Satellite"/>
+                                <segment title="Hybride"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedChanged:" destination="5Mm-Uq-xyq" eventType="valueChanged" id="CJu-fy-QaU"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Carte loisir" image="placeholder" id="gub-MF-m2R">
+                            <connections>
+                                <action selector="getPosition:" destination="5Mm-Uq-xyq" id="dxo-Ot-pFU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="Sft-aL-4Zl" id="hV2-Jx-6uh"/>
+                        <segue destination="7oC-tl-297" kind="show" identifier="Detail" id="HJC-Vq-8kt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Uc-MK-FJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2320.8000000000002" y="-316.25615763546801"/>
+            <point key="canvasLocation" x="2321" y="-310"/>
         </scene>
         <!--Detail Loisir Controller-->
         <scene sceneID="MzG-Vf-Vpu">
@@ -385,20 +389,112 @@
                     <view key="view" contentMode="scaleToFill" id="o2g-ze-IRb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Les écoles de Vichy Communauté" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6d-km-8fo">
+                                <rect key="frame" x="10" y="98" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GBB-50-lTr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-xI-Gug">
+                                <rect key="frame" x="10" y="136" width="355" height="583"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Ecole" rowHeight="200" id="yFa-4Z-gGQ" customClass="EcoleCell" customModule="Etudier_a__Vichy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="355" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yFa-4Z-gGQ" id="gnk-U8-6Fh">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="199.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Médiathèque Valéry Larbaud" translatesAutoresizingMaskIntoConstraints="NO" id="X5X-Yy-Fiv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="199.66666666666666"/>
+                                                </imageView>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncb-Kq-aDj">
+                                                    <rect key="frame" x="0.0" y="139.66666666666666" width="355" height="60"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LTH-Vb-7w8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WU4-wv-Qzt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Wh5-u9-sQz">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                </view>
+                                                                <vibrancyEffect>
+                                                                    <blurEffect style="light"/>
+                                                                </vibrancyEffect>
+                                                            </visualEffectView>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="7Ge-Uh-t2K"/>
+                                                    </constraints>
+                                                    <blurEffect style="light"/>
+                                                </visualEffectView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="imX-cK-uEM">
+                                                    <rect key="frame" x="0.0" y="139.66666666666666" width="355" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="kDE-1z-I96"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ncb-Kq-aDj" secondAttribute="trailing" id="4yy-Pu-ob9"/>
+                                                <constraint firstAttribute="bottom" secondItem="ncb-Kq-aDj" secondAttribute="bottom" id="FmS-40-Qq7"/>
+                                                <constraint firstAttribute="bottom" secondItem="X5X-Yy-Fiv" secondAttribute="bottom" id="Y36-R0-diY"/>
+                                                <constraint firstAttribute="bottom" secondItem="imX-cK-uEM" secondAttribute="bottom" id="lqv-FB-C2r"/>
+                                                <constraint firstItem="X5X-Yy-Fiv" firstAttribute="top" secondItem="gnk-U8-6Fh" secondAttribute="top" id="pS9-Kx-yHw"/>
+                                                <constraint firstItem="X5X-Yy-Fiv" firstAttribute="leading" secondItem="gnk-U8-6Fh" secondAttribute="leading" id="sJa-Jz-pyE"/>
+                                                <constraint firstItem="imX-cK-uEM" firstAttribute="leading" secondItem="gnk-U8-6Fh" secondAttribute="leading" id="t1t-gw-Gem"/>
+                                                <constraint firstAttribute="trailing" secondItem="imX-cK-uEM" secondAttribute="trailing" id="tCX-It-w7F"/>
+                                                <constraint firstItem="ncb-Kq-aDj" firstAttribute="leading" secondItem="gnk-U8-6Fh" secondAttribute="leading" id="vHP-QH-3YB"/>
+                                                <constraint firstAttribute="trailing" secondItem="X5X-Yy-Fiv" secondAttribute="trailing" id="yUd-TZ-ThM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="loisirIV" destination="X5X-Yy-Fiv" id="60C-MH-I3h"/>
+                                            <outlet property="nomLabel" destination="imX-cK-uEM" id="I7O-3t-Os3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D0e-xI-Gug" firstAttribute="top" secondItem="o6d-km-8fo" secondAttribute="bottom" constant="8" id="2pP-Mp-DIh"/>
+                            <constraint firstItem="hnV-5u-loq" firstAttribute="trailing" secondItem="D0e-xI-Gug" secondAttribute="trailing" constant="10" id="BSm-8l-aGK"/>
+                            <constraint firstItem="hnV-5u-loq" firstAttribute="bottom" secondItem="D0e-xI-Gug" secondAttribute="bottom" constant="10" id="DcD-iK-OEd"/>
+                            <constraint firstItem="o6d-km-8fo" firstAttribute="top" secondItem="hnV-5u-loq" secondAttribute="top" constant="10" id="TCM-xu-Ihz"/>
+                            <constraint firstItem="D0e-xI-Gug" firstAttribute="leading" secondItem="hnV-5u-loq" secondAttribute="leading" constant="10" id="ZJz-vI-Lck"/>
+                            <constraint firstItem="o6d-km-8fo" firstAttribute="leading" secondItem="hnV-5u-loq" secondAttribute="leading" constant="10" id="eWl-ON-dtP"/>
+                            <constraint firstItem="hnV-5u-loq" firstAttribute="trailing" secondItem="o6d-km-8fo" secondAttribute="trailing" constant="10" id="fkW-Zs-pGO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hnV-5u-loq"/>
                     </view>
                     <navigationItem key="navigationItem" id="wam-eq-9zV">
                         <barButtonItem key="rightBarButtonItem" title="Carte ecole" image="earth" id="25d-hx-4cm">
                             <connections>
-                                <segue destination="TrS-sl-og7" kind="show" identifier="Carte" id="Jo2-Ac-Jpq"/>
+                                <segue destination="TrS-sl-og7" kind="show" identifier="Carte" id="75N-HN-w2S"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="D0e-xI-Gug" id="xih-5S-pac"/>
+                        <segue destination="z2M-hN-3hT" kind="show" identifier="Detail" id="w4Y-ST-MGV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bim-xK-Rmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="678"/>
+            <point key="canvasLocation" x="1477.5999999999999" y="677.58620689655174"/>
         </scene>
         <!--Ecole Carte Controller-->
         <scene sceneID="1TL-zL-IuM">
@@ -411,20 +507,6 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="z2X-L1-m2o">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xYs-Bu-XTb">
-                                <rect key="frame" x="20" y="98" width="335" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="R53-yb-Aci"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Standard"/>
-                                    <segment title="Satellite"/>
-                                    <segment title="Hybride"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentedChanged:" destination="TrS-sl-og7" eventType="valueChanged" id="sVi-2l-ooi"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -432,19 +514,80 @@
                             <constraint firstItem="z2X-L1-m2o" firstAttribute="bottom" secondItem="Syz-Bz-jFi" secondAttribute="bottom" id="JsM-iT-sin"/>
                             <constraint firstItem="z2X-L1-m2o" firstAttribute="top" secondItem="Syz-Bz-jFi" secondAttribute="top" id="gi1-Lp-y7w"/>
                             <constraint firstItem="z2X-L1-m2o" firstAttribute="trailing" secondItem="Syz-Bz-jFi" secondAttribute="trailing" id="j9L-0e-ocr"/>
-                            <constraint firstItem="xYs-Bu-XTb" firstAttribute="leading" secondItem="Syz-Bz-jFi" secondAttribute="leading" constant="20" id="mkC-68-uAk"/>
-                            <constraint firstItem="Syz-Bz-jFi" firstAttribute="trailing" secondItem="xYs-Bu-XTb" secondAttribute="trailing" constant="20" id="tW0-RV-a1c"/>
-                            <constraint firstItem="xYs-Bu-XTb" firstAttribute="top" secondItem="Syz-Bz-jFi" secondAttribute="top" constant="10" id="tiV-At-JgR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Syz-Bz-jFi"/>
                     </view>
+                    <navigationItem key="navigationItem" id="66t-PP-m0U">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="xYs-Bu-XTb">
+                            <rect key="frame" x="81.666666666666686" y="7.6666666666666679" width="212" height="29.000000000000004"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Standard"/>
+                                <segment title="Satellite"/>
+                                <segment title="Hybride"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedChanged:" destination="TrS-sl-og7" eventType="valueChanged" id="sVi-2l-ooi"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Carte ecole" image="placeholder" id="8uT-tv-K91">
+                            <connections>
+                                <action selector="getPosition:" destination="TrS-sl-og7" id="ufW-73-sPk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="z2X-L1-m2o" id="Soi-s8-xVE"/>
+                        <segue destination="z2M-hN-3hT" kind="show" identifier="Detail" id="HLd-qm-4FV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGU-Ut-H02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2320.8000000000002" y="365.76354679802955"/>
+            <point key="canvasLocation" x="2321" y="373"/>
+        </scene>
+        <!--Detail Ecole Controller-->
+        <scene sceneID="W95-rX-Yf9">
+            <objects>
+                <viewController id="z2M-hN-3hT" customClass="DetailEcoleController" customModule="Etudier_a__Vichy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3HT-sU-TVs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xzf-ZB-UR0">
+                                <rect key="frame" x="87.666666666666686" y="98" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0jI-cF-Lho"/>
+                                    <constraint firstAttribute="height" constant="200" id="zP6-hq-Rkt"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="REz-3S-jrO">
+                                <rect key="frame" x="16" y="318" width="343" height="401"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="REz-3S-jrO" firstAttribute="top" secondItem="xzf-ZB-UR0" secondAttribute="bottom" constant="20" id="1cx-dP-ohD"/>
+                            <constraint firstItem="5Si-MO-MUi" firstAttribute="trailing" secondItem="REz-3S-jrO" secondAttribute="trailing" constant="16" id="2CE-nO-DsQ"/>
+                            <constraint firstItem="REz-3S-jrO" firstAttribute="leading" secondItem="5Si-MO-MUi" secondAttribute="leading" constant="16" id="hju-op-bdM"/>
+                            <constraint firstItem="xzf-ZB-UR0" firstAttribute="centerX" secondItem="3HT-sU-TVs" secondAttribute="centerX" id="kpB-6b-E6y"/>
+                            <constraint firstItem="xzf-ZB-UR0" firstAttribute="top" secondItem="5Si-MO-MUi" secondAttribute="top" constant="10" id="wbl-td-hKI"/>
+                            <constraint firstItem="5Si-MO-MUi" firstAttribute="bottom" secondItem="REz-3S-jrO" secondAttribute="bottom" constant="10" id="ylz-vU-F5p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Si-MO-MUi"/>
+                    </view>
+                    <connections>
+                        <outlet property="ecoleIV" destination="xzf-ZB-UR0" id="1fn-Hh-nlT"/>
+                        <outlet property="nomEtDesc" destination="REz-3S-jrO" id="Uvk-x3-ri0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKI-Sd-ozF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3257" y="678"/>
         </scene>
         <!--Controller Avec Carte-->
         <scene sceneID="wg7-f3-ORb">
@@ -672,6 +815,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Médiathèque Valéry Larbaud" width="1050" height="700"/>
         <image name="earth" width="25.600000381469727" height="25.600000381469727"/>
         <image name="flunch" width="550" height="413"/>
         <image name="fond_vichy" width="780" height="820"/>
@@ -679,6 +823,8 @@
         <image name="placeholder" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FFu-4w-cqQ"/>
+        <segue reference="HLd-qm-4FV"/>
+        <segue reference="HJC-Vq-8kt"/>
+        <segue reference="GKG-Em-BVc"/>
     </inferredMetricsTieBreakers>
 </document>
