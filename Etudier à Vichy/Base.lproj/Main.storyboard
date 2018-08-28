@@ -63,19 +63,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flunch" translatesAutoresizingMaskIntoConstraints="NO" id="N9s-Jb-HwD">
-                                                    <rect key="frame" x="0.0" y="2" width="355" height="195"/>
+                                                    <rect key="frame" x="0.0" y="10" width="355" height="180"/>
                                                 </imageView>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRc-tk-FCq">
-                                                    <rect key="frame" x="0.0" y="137" width="355" height="60"/>
+                                                    <rect key="frame" x="0.0" y="167" width="355" height="30"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TiJ-iJ-JWq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYI-UZ-TYZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="y2W-97-QMu">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 </view>
                                                                 <vibrancyEffect>
@@ -85,14 +85,14 @@
                                                         </subviews>
                                                     </view>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="1Ty-Vh-0wb"/>
+                                                        <constraint firstAttribute="height" constant="30" id="1Ty-Vh-0wb"/>
                                                     </constraints>
                                                     <blurEffect style="light"/>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="B8O-sc-IMI">
-                                                    <rect key="frame" x="0.0" y="137" width="355" height="60"/>
+                                                    <rect key="frame" x="0.0" y="167" width="355" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="7dW-mZ-Ss8"/>
+                                                        <constraint firstAttribute="height" constant="30" id="7dW-mZ-Ss8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
@@ -106,8 +106,8 @@
                                                 <constraint firstItem="B8O-sc-IMI" firstAttribute="leading" secondItem="j5i-s9-epC" secondAttribute="leading" id="Ruf-ZT-ONe"/>
                                                 <constraint firstItem="N9s-Jb-HwD" firstAttribute="leading" secondItem="j5i-s9-epC" secondAttribute="leading" id="Vhd-bC-kti"/>
                                                 <constraint firstAttribute="bottom" secondItem="B8O-sc-IMI" secondAttribute="bottom" constant="3" id="bXo-YQ-blu"/>
-                                                <constraint firstAttribute="bottom" secondItem="N9s-Jb-HwD" secondAttribute="bottom" constant="3" id="oRC-0W-dc2"/>
-                                                <constraint firstItem="N9s-Jb-HwD" firstAttribute="top" secondItem="j5i-s9-epC" secondAttribute="top" constant="2" id="rok-gT-MiK"/>
+                                                <constraint firstAttribute="bottom" secondItem="N9s-Jb-HwD" secondAttribute="bottom" constant="10" id="oRC-0W-dc2"/>
+                                                <constraint firstItem="N9s-Jb-HwD" firstAttribute="top" secondItem="j5i-s9-epC" secondAttribute="top" constant="10" id="rok-gT-MiK"/>
                                                 <constraint firstAttribute="trailing" secondItem="N9s-Jb-HwD" secondAttribute="trailing" id="wmh-kH-5h6"/>
                                                 <constraint firstItem="ZRc-tk-FCq" firstAttribute="leading" secondItem="j5i-s9-epC" secondAttribute="leading" id="xBC-fv-otY"/>
                                                 <constraint firstAttribute="trailing" secondItem="B8O-sc-IMI" secondAttribute="trailing" id="xZC-y6-PJe"/>
@@ -390,6 +390,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fond_vichy" translatesAutoresizingMaskIntoConstraints="NO" id="Cqy-Ib-W0h">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWA-9d-aWO">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ecZ-RQ-bx6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-dz-3AB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="5eZ-7k-tpW">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Les écoles de Vichy Communauté" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6d-km-8fo">
                                 <rect key="frame" x="10" y="98" width="355" height="30"/>
                                 <constraints>
@@ -399,31 +423,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-xI-Gug">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-xI-Gug">
                                 <rect key="frame" x="10" y="136" width="355" height="583"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Ecole" rowHeight="200" id="yFa-4Z-gGQ" customClass="EcoleCell" customModule="Etudier_a__Vichy" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Ecole" rowHeight="200" id="yFa-4Z-gGQ" customClass="EcoleCell" customModule="Etudier_a__Vichy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="355" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yFa-4Z-gGQ" id="gnk-U8-6Fh">
-                                            <rect key="frame" x="0.0" y="0.0" width="355" height="199.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Médiathèque Valéry Larbaud" translatesAutoresizingMaskIntoConstraints="NO" id="X5X-Yy-Fiv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="199.66666666666666"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="es vichy" translatesAutoresizingMaskIntoConstraints="NO" id="X5X-Yy-Fiv">
+                                                    <rect key="frame" x="0.0" y="10" width="355" height="180"/>
                                                 </imageView>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncb-Kq-aDj">
-                                                    <rect key="frame" x="0.0" y="139.66666666666666" width="355" height="60"/>
+                                                    <rect key="frame" x="0.0" y="167" width="355" height="30"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LTH-Vb-7w8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WU4-wv-Qzt">
-                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Wh5-u9-sQz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 </view>
                                                                 <vibrancyEffect>
@@ -433,26 +457,27 @@
                                                         </subviews>
                                                     </view>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="7Ge-Uh-t2K"/>
+                                                        <constraint firstAttribute="height" constant="30" id="7Ge-Uh-t2K"/>
                                                     </constraints>
                                                     <blurEffect style="light"/>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="imX-cK-uEM">
-                                                    <rect key="frame" x="0.0" y="139.66666666666666" width="355" height="60"/>
+                                                    <rect key="frame" x="0.0" y="167" width="355" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="kDE-1z-I96"/>
+                                                        <constraint firstAttribute="height" constant="30" id="kDE-1z-I96"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="ncb-Kq-aDj" secondAttribute="trailing" id="4yy-Pu-ob9"/>
-                                                <constraint firstAttribute="bottom" secondItem="ncb-Kq-aDj" secondAttribute="bottom" id="FmS-40-Qq7"/>
-                                                <constraint firstAttribute="bottom" secondItem="X5X-Yy-Fiv" secondAttribute="bottom" id="Y36-R0-diY"/>
-                                                <constraint firstAttribute="bottom" secondItem="imX-cK-uEM" secondAttribute="bottom" id="lqv-FB-C2r"/>
-                                                <constraint firstItem="X5X-Yy-Fiv" firstAttribute="top" secondItem="gnk-U8-6Fh" secondAttribute="top" id="pS9-Kx-yHw"/>
+                                                <constraint firstAttribute="bottom" secondItem="ncb-Kq-aDj" secondAttribute="bottom" constant="3" id="FmS-40-Qq7"/>
+                                                <constraint firstAttribute="bottom" secondItem="X5X-Yy-Fiv" secondAttribute="bottom" constant="10" id="Y36-R0-diY"/>
+                                                <constraint firstAttribute="bottom" secondItem="imX-cK-uEM" secondAttribute="bottom" constant="3" id="lqv-FB-C2r"/>
+                                                <constraint firstItem="X5X-Yy-Fiv" firstAttribute="top" secondItem="gnk-U8-6Fh" secondAttribute="top" constant="10" id="pS9-Kx-yHw"/>
                                                 <constraint firstItem="X5X-Yy-Fiv" firstAttribute="leading" secondItem="gnk-U8-6Fh" secondAttribute="leading" id="sJa-Jz-pyE"/>
                                                 <constraint firstItem="imX-cK-uEM" firstAttribute="leading" secondItem="gnk-U8-6Fh" secondAttribute="leading" id="t1t-gw-Gem"/>
                                                 <constraint firstAttribute="trailing" secondItem="imX-cK-uEM" secondAttribute="trailing" id="tCX-It-w7F"/>
@@ -460,6 +485,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="X5X-Yy-Fiv" secondAttribute="trailing" id="yUd-TZ-ThM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="loisirIV" destination="X5X-Yy-Fiv" id="60C-MH-I3h"/>
                                             <outlet property="nomLabel" destination="imX-cK-uEM" id="I7O-3t-Os3"/>
@@ -473,10 +499,18 @@
                             <constraint firstItem="D0e-xI-Gug" firstAttribute="top" secondItem="o6d-km-8fo" secondAttribute="bottom" constant="8" id="2pP-Mp-DIh"/>
                             <constraint firstItem="hnV-5u-loq" firstAttribute="trailing" secondItem="D0e-xI-Gug" secondAttribute="trailing" constant="10" id="BSm-8l-aGK"/>
                             <constraint firstItem="hnV-5u-loq" firstAttribute="bottom" secondItem="D0e-xI-Gug" secondAttribute="bottom" constant="10" id="DcD-iK-OEd"/>
+                            <constraint firstItem="EWA-9d-aWO" firstAttribute="leading" secondItem="hnV-5u-loq" secondAttribute="leading" id="GCH-qN-Qzm"/>
+                            <constraint firstItem="EWA-9d-aWO" firstAttribute="top" secondItem="hnV-5u-loq" secondAttribute="top" id="Hdb-o7-DP6"/>
+                            <constraint firstItem="Cqy-Ib-W0h" firstAttribute="leading" secondItem="hnV-5u-loq" secondAttribute="leading" id="Icg-ru-SkD"/>
+                            <constraint firstItem="Cqy-Ib-W0h" firstAttribute="trailing" secondItem="hnV-5u-loq" secondAttribute="trailing" id="LlR-fE-6Pg"/>
                             <constraint firstItem="o6d-km-8fo" firstAttribute="top" secondItem="hnV-5u-loq" secondAttribute="top" constant="10" id="TCM-xu-Ihz"/>
                             <constraint firstItem="D0e-xI-Gug" firstAttribute="leading" secondItem="hnV-5u-loq" secondAttribute="leading" constant="10" id="ZJz-vI-Lck"/>
                             <constraint firstItem="o6d-km-8fo" firstAttribute="leading" secondItem="hnV-5u-loq" secondAttribute="leading" constant="10" id="eWl-ON-dtP"/>
                             <constraint firstItem="hnV-5u-loq" firstAttribute="trailing" secondItem="o6d-km-8fo" secondAttribute="trailing" constant="10" id="fkW-Zs-pGO"/>
+                            <constraint firstAttribute="bottom" secondItem="EWA-9d-aWO" secondAttribute="bottom" id="mQe-kz-gbs"/>
+                            <constraint firstAttribute="bottom" secondItem="Cqy-Ib-W0h" secondAttribute="bottom" id="nXw-A0-KZ8"/>
+                            <constraint firstItem="EWA-9d-aWO" firstAttribute="trailing" secondItem="hnV-5u-loq" secondAttribute="trailing" id="srS-v6-eqM"/>
+                            <constraint firstItem="Cqy-Ib-W0h" firstAttribute="top" secondItem="hnV-5u-loq" secondAttribute="top" id="tMd-r9-W5C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hnV-5u-loq"/>
                     </view>
@@ -554,7 +588,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xzf-ZB-UR0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xzf-ZB-UR0" customClass="ImageRonde" customModule="Etudier_a__Vichy" customModuleProvider="target">
                                 <rect key="frame" x="87.666666666666686" y="98" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="0jI-cF-Lho"/>
@@ -815,16 +849,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Médiathèque Valéry Larbaud" width="1050" height="700"/>
         <image name="earth" width="25.600000381469727" height="25.600000381469727"/>
+        <image name="es vichy" width="240" height="240"/>
         <image name="flunch" width="550" height="413"/>
         <image name="fond_vichy" width="780" height="820"/>
         <image name="list" width="25.600000381469727" height="25.600000381469727"/>
         <image name="placeholder" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HLd-qm-4FV"/>
+        <segue reference="w4Y-ST-MGV"/>
         <segue reference="HJC-Vq-8kt"/>
-        <segue reference="GKG-Em-BVc"/>
+        <segue reference="FFu-4w-cqQ"/>
     </inferredMetricsTieBreakers>
 </document>
